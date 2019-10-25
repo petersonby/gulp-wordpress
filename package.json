@@ -38,7 +38,6 @@
     "IE 11"
   ],
   "dependencies": {
-    "gulp-cli": "^2.2.0",
     "jquery": "^3.4.1"
   }
 }
