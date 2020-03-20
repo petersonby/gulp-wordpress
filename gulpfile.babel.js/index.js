@@ -7,7 +7,6 @@ import {styles} from './styles';
 import {svgSprites} from './svgSprites';
 import {watcher} from './watcher';
 import info from '../package.json';
-import replace from "gulp-replace";
 import zip from "gulp-zip";
 
 const paths = {
@@ -42,7 +41,6 @@ export function defaultTask() {
 
 export function compress() {
 	return src(paths.package.src)
-		.pipe(replace('_themename', info.name))
 		.pipe(zip(`${info.name}.zip`))
 		.pipe(dest(paths.package.dest));
 }
