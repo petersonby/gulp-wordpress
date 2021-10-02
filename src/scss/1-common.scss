@@ -1,7 +1,9 @@
+@import '_vars';
+
 *, 
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,9 +14,13 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Muller', Arial, sans-serif;
   font-weight: normal;
-  color: #fff;
+  line-height: 1.2;
+  color: #000;
+
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .main {
@@ -40,4 +46,29 @@ body {
   overflow: hidden;
   clip: rect(0,0,0,0);
   border: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.fixed {
+    overflow: hidden;
 }

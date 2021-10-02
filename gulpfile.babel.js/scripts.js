@@ -24,10 +24,7 @@ export function scripts() {
 			mode: PROD ? 'production' : 'development',
 			devtool: !PROD ? 'inline-source-map' : false,
 			output: {
-				filename: 'bundle.js'
-			},
-			externals: {
-				jquery: 'jQuery'
+				filename: 'bundle.min.js'
 			},
 		}))
 		.pipe(gulpIf(PROD, uglify()))

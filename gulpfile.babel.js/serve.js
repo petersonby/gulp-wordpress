@@ -4,7 +4,7 @@ const server = browserSync.create();
 
 export function serve(done) {
 	server.init({
-		proxy: `http://localhost/${info.name}`
+		proxy: `http://localhost:8888/${info.name}`
 	});
 
 	server.watch('build/**/*.*').on('change', server.reload);

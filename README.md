@@ -33,7 +33,7 @@ npm run build
   * `gulp assets` – other assets compilation
 #### 2. HTML
   Simple template for html-coding
-#### 3. CSS
-  Basic styles for (almost) every site
+#### 3. SCSS
+  Basic styles
 #### 4. JS
   Include: Polyfill for 'forEach', Animated scroll to anchors, mobile burger menu, tiny-slider

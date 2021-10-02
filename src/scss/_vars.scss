@@ -1,0 +1,10 @@
+$sm: 768px;
+
+:root {
+    --z-index: 2;
+}
+
+@function toRem($value) {
+    $remValue: ($value / 16) + rem; 
+    @return $remValue;
+}
