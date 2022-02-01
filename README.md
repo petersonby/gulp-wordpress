@@ -6,7 +6,7 @@ Click on [Use this template](https://github.com/petersonby/gulp-wordpress/genera
 
 ## Usage
 
-Change project `name` in [package.json](https://github.com/petersonby/gulp-wordpress/package.json) file
+Change project `name` in [package.json](https://github.com/petersonby/gulp-wordpress/package.json) file:
 ```diff
 -  "name": "boilerplate",
 +  "name": "project",
