@@ -1,10 +1,10 @@
-import {series, parallel} from 'gulp';
-import {clean} from './clean';
-import {serve} from './serve';
-import {scripts} from './scripts';
-import {styles} from './styles';
-import {svgSprites} from './svgSprites';
-import {watcher} from './watcher';
+import { series, parallel } from 'gulp';
+import { clean } from './clean';
+import { serve } from './serve';
+import { scripts } from './scripts';
+import { styles } from './styles';
+import { svgSprites } from './svgSprites';
+import { watcher } from './watcher';
 
 export function build(done) { 
 	return series(
@@ -17,7 +17,6 @@ export function build(done) {
 export function defaultTask() {
 	return series(build, parallel(watcher, serve))()
 }
-
 
 exports.serve = serve;
 exports.clean = clean;

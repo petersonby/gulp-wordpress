@@ -1,4 +1,4 @@
-import {src, dest} from 'gulp';
+import { src, dest } from 'gulp';
 import gulpIf from 'gulp-if';
 import csso from 'gulp-csso';
 import concat from 'gulp-concat';

@@ -1,8 +1,9 @@
-import {src, dest} from 'gulp';
+import { src, dest } from 'gulp';
 import gulpIf from 'gulp-if';
 import uglify from 'gulp-uglify';
 import webpack from 'webpack-stream';
 import yargs from 'yargs';
+
 const PROD = yargs.argv.prod;
 
 export function scripts() {

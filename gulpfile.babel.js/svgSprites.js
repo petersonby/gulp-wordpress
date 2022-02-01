@@ -1,4 +1,4 @@
-import {src, dest} from 'gulp';
+import { src, dest } from 'gulp';
 import svgSprite from 'gulp-svg-sprite';
 
 export function svgSprites() {
