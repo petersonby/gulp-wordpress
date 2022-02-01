@@ -6,7 +6,7 @@ Click on [Use this template](https://github.com/petersonby/gulp-wordpress/genera
 
 ## Usage
 
-Change project `name` in [package.json](https://github.com/petersonby/gulp-wordpress/package.json) file:
+Change project `name` in [package.json](https://github.com/petersonby/gulp-wordpress/blob/master/package.json) file:
 ```diff
 -  "name": "boilerplate",
 +  "name": "project",
@@ -23,16 +23,15 @@ npm run build
 
 ## Includes:
 #### 1. Gulp tasks
-  * `gulp` or `gulp default` – default task, builds assets, starts watching directories for changes and reload browser
+  * `gulp` or `gulp default` – default task: builds assets, starts watching directories for changes and reload browser
   * `gulp build` – rebuilds all assets
   * `gulp watcher` – starts watching directories for changes
-  * `gulp serve` – run browsersync server with auto reload
+  * `gulp serve` – run browsersync server with live reload
   * `gulp clean` – delete build folder
-  * `gulp styles` – styles compilation (include: concat, minify, sourcemaps, autoprefixer)
-  * `gulp scripts` – scripts compilation (include: concat, uglify, sourcemaps, babel)
+  * `gulp styles` – styles compilation (includes: concat, minify, sourcemaps, autoprefixer)
+  * `gulp scripts` – scripts compilation (includes: concat, uglify, sourcemaps, babel)
   * `gulp lint` – lint scripts with eslint
-  * `gulp svgSprites` – create svgSprite (include: concat, minify)
-  * `gulp assets` – other assets compilation
+  * `gulp svgSprites` – create svgSprite (includes: concat, minify)
 #### 2. PHP
   Basic WordPress templates
 #### 3. SCSS
