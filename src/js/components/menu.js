@@ -1,32 +1,23 @@
-const menu = document.querySelector('.menu');
-const burger = document.querySelector('.menu__mobile');
-const menuClose = document.querySelector('.menu__close');
-const links = document.querySelectorAll('.menu__link');
-let menuOpen = false;
+const menu = document.querySelector('.js-menu');
+const burger = document.querySelector('.js-menu-btn');
+const header = document.querySelector('.header');
 
-if(burger) {
+if (burger) {
+  burger.addEventListener('click', (e) => {
+    e.preventDefault();
 
-  burger.onclick = () => {
-    if (!menuOpen) {
-      menu.classList.add('menu_open');
-      setTimeout(() => menu.classList.add('menu_trans'), 100);
-      menuOpen = !menuOpen;
-    } else {
-      remove();
+    header.classList.toggle('is-opened');
+    document.body.classList.toggle('fixed');
+  });
+
+  menu.addEventListener('click', (e) => {
+    if (!header.classList.contains('is-opened')) {
+      return;
     }
-  }
 
-  links.forEach(link => link.addEventListener('click', remove));
-
-  menuClose.addEventListener('click', remove);
-
-
-  function remove() {
-    if (menuOpen) {
-      menu.classList.remove('menu_trans');
-      setTimeout(() => menu.classList.remove('menu_open'), 300);
-      menuOpen = !menuOpen;
+    if (e.target.closest('a')) {
+      header.classList.remove('is-opened');
+      document.body.classList.remove('fixed');
     }
-  }
-
+  });
 }

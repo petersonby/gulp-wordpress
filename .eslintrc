@@ -1,0 +1,23 @@
+{
+    "extends": [
+        "airbnb-base"
+    ],
+    "env": {
+        "browser": true,
+        "jquery": true,
+        "es6": true
+    },
+    "rules": {
+        "eol-last": [
+            "error",
+            "never"
+        ],
+        "comma-dangle": [
+            "error",
+            "never"
+        ]
+    },
+    "parserOptions": {
+        "ecmaVersion": 2020
+    }
+}

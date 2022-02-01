@@ -36,4 +36,4 @@ npm run build
 #### 3. SCSS
   Basic styles
 #### 4. JS
-  Include: Polyfill for 'forEach', Animated scroll to anchors, mobile burger menu, tiny-slider
+  Include: Polyfill for 'forEach', Animated scroll to anchors, mobile burger menu
