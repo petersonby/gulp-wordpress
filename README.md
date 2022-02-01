@@ -1,21 +1,22 @@
 # Gulp WordPress boilerplate project
 
 ## Install
-```
-git clone --depth 1 git@github.com:petersonby/gulp-wordpress.git
-git commit --amend --reset-author -m 'chore(project): init project'
-git remote set-url origin <url> // <url> – new repo
-git push origin master
 
-npm install
-```
+Click on [Use this template](https://github.com/petersonby/gulp-wordpress/generate) button.
 
 ## Usage
-Create build and start server for development:
+
+Change project `name` in [package.json](https://github.com/petersonby/gulp-wordpress/package.json) file
+```diff
+-  "name": "boilerplate",
++  "name": "project",
+```
+
+Start development server:
 ```
 npm start
 ```
-Create build for production:
+Create production build:
 ```
 npm run build
 ```
@@ -29,11 +30,12 @@ npm run build
   * `gulp clean` – delete build folder
   * `gulp styles` – styles compilation (include: concat, minify, sourcemaps, autoprefixer)
   * `gulp scripts` – scripts compilation (include: concat, uglify, sourcemaps, babel)
+  * `gulp lint` – lint scripts with eslint
   * `gulp svgSprites` – create svgSprite (include: concat, minify)
   * `gulp assets` – other assets compilation
-#### 2. HTML
-  Simple template for html-coding
+#### 2. PHP
+  Basic WordPress templates
 #### 3. SCSS
   Basic styles
 #### 4. JS
-  Include: Polyfill for 'forEach', Animated scroll to anchors, mobile burger menu
+  Includes: Polyfill for 'forEach', Animated scroll to anchors, mobile burger menu
