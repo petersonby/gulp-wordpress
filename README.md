@@ -2,7 +2,13 @@
 
 ## Install
 
-Click on [Use this template](https://github.com/petersonby/gulp-wordpress/generate) button.
+1. Click on [Use this template](https://github.com/petersonby/gulp-wordpress/generate) button.
+2. Download and install [the latest WordPress](https://wordpress.org/download/).
+3. Navigate to `themes` folder.
+4. Download the template to this folder.
+5. Run `npm install` and `npm run build`.
+6. Open WordPress Dashboard - Appearance - Themes.
+7. Activate Gulp-WP theme.
 
 ## Usage
 
