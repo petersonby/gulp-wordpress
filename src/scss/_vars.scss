@@ -1,10 +1,12 @@
-$sm: 768px;
+@use "sass:math";
 
-:root {
-    --z-index: 2;
-}
+$xs: 375px;
+$sm: 768px;
+$md: 1000px;
+$lg: 1440px;
+$xl: 1800px;
 
 @function toRem($value) {
-    $remValue: ($value / 16) + rem; 
+    $remValue: math.div($value, 16) + rem;
     @return $remValue;
 }

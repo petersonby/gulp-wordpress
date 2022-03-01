@@ -1,10 +1,10 @@
-@import '_vars';
+@import "_vars";
 
 .menu-btn {
     text-indent: -9999px;
     width: 24px;
     height: 24px;
-    background: url('../../assets/sprite/sprite.svg#menu') no-repeat center /cover;
+    background: url("../../assets/sprite/sprite.svg#menu") no-repeat center / cover;
 
     @media (min-width: $sm) {
         display: none;
@@ -24,7 +24,7 @@
         font-size: 16px;
         line-height: 1.5;
         display: block;
-        
+
         text-decoration: none;
         text-transform: uppercase;
         color: #000;
